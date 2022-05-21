@@ -25,6 +25,16 @@ export class AppComponent {
     // this.rsaService.sendEncryptedMessage(e,n,80n).subscribe((data: any) =>{
     //   console.log(data);
     // });
+  }
+  goSignMessage (){
 
+    this.rsaService.signMessage();
+
+    // this.rsaService.sendEncryptedMessage(e,n,80n).subscribe((data: any) =>{
+    //   console.log(data);
+    // });
+  }
+  goBlindSignMessage(){
+    this.rsaService.signBlindMessage();
   }
 }
